@@ -1,14 +1,11 @@
-/* Reset and Basics */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     color: #333;
     background-color: #f7f7f7;
 }
-
-/* Navigation */
 nav {
-    background: linear-gradient(45deg, #2c3e50, #3498db); /* Gradient like LunaLaunch */
+    background: linear-gradient(45deg, #2c3e50, #3498db);
     padding: 15px;
     position: sticky;
     top: 0;
@@ -27,35 +24,20 @@ nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    display: flex;
-    align-items: center;
-    transition: transform 0.3s ease;
 }
-nav a i {
-    margin-right: 8px;
-}
-nav a:hover {
-    transform: scale(1.1); /* Slight grow on hover */
-}
-
-/* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #6b7280, #d1d5db); /* Soft gradient */
+    background: linear-gradient(135deg, #6b7280, #d1d5db);
     text-align: center;
     padding: 80px 20px;
-    animation: fadeIn 2s ease-in;
 }
 .hero h1 {
     font-size: 48px;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .hero p {
     font-size: 20px;
     color: white;
 }
-
-/* Content Section */
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -65,28 +47,14 @@ nav a:hover {
 .card {
     background: white;
     border: 2px solid transparent;
-    border-image: linear-gradient(45deg, #3498db, #8e44ad) 1; /* Gradient border like inlays */
+    border-image: linear-gradient(45deg, #3498db, #8e44ad) 1;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
     width: 300px;
     text-align: center;
 }
-.card:hover {
-    transform: translateY(-5px); /* Lift on hover */
-}
-.card h2 {
-    font-size: 24px;
-    color: #2c3e50;
-}
-.card p {
-    font-size: 16px;
-    color: #666;
-}
-
-/* Hero Image */
 .hero-image {
     max-width: 80%;
     border-radius: 10px;
@@ -95,25 +63,17 @@ nav a:hover {
     border: 2px solid transparent;
     border-image: linear-gradient(45deg, #3498db, #8e44ad) 1;
 }
-
-/* Footer */
 footer {
     text-align: center;
     padding: 20px;
     background: linear-gradient(45deg, #2c3e50, #3498db);
     color: white;
 }
-
-/* Animation */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-/* Mobile Responsiveness */
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 36px;
     }
-    .hero p {
-        font-size
+    .card {
+        width: 100%;
+    }
+}
